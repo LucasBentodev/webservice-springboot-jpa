@@ -16,18 +16,20 @@ public class User implements Serializable {
     private String email;
     private  String phone;
     private  String password;
-    private double total() {
-     return 1;
-    }
-    public User() {
 
+    public User() {
+        // Construtor sem argumentos
     }
-    public User(long id, String name, String email, String phone, String password) {
-        this.id = id;
+
+    public User(String name, String email, String phone, String password) {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.password = password;
+    }
+
+    private double total() {
+     return 1;
     }
 
     public long getId() {
